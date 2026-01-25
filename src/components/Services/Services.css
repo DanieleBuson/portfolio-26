@@ -1,0 +1,19 @@
+.services-section {
+  padding: 4rem 0;
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+.services-title {
+  margin: 0;
+}
+
+.services-subtitle {
+  color: var(--text-muted) !important;
+  max-width: 70ch;
+}
+
+.services-fullwidth {
+  width: 100%;
+  padding: 1rem 0;
+}

@@ -1,0 +1,81 @@
+.home-section {
+  width: 100%;
+  overflow-x: clip;
+  padding: 4rem 0;
+
+  background: var(--bg);
+  color: var(--text);
+}
+
+.home-kicker {
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.home-title {
+  color: var(--text);
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.home-description {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 70ch;
+}
+
+/* CTA */
+.home-cta .btn {
+  border-radius: 0.75rem;
+  padding: 0.65rem 1.1rem;
+  font-weight: 600;
+}
+
+/* Primary button uses theme button tokens */
+.home-btn-primary {
+  background: var(--btn-bg) !important;
+  color: var(--btn-text) !important;
+  border: 1px solid var(--btn-bg) !important;
+}
+
+.home-btn-primary:hover,
+.home-btn-primary:focus {
+  background: var(--btn-bg-hover) !important;
+  color: var(--btn-text) !important;
+  border-color: var(--btn-bg-hover) !important;
+}
+
+/* Secondary button uses neutral surface tokens */
+.home-btn-secondary {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+}
+
+.home-btn-secondary:hover,
+.home-btn-secondary:focus {
+  background: var(--surface-2) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
+
+/* Photo */
+.home-photo-wrap {
+  width: min(420px, 100%);
+}
+
+.home-photo {
+  width: 100%;
+  border-radius: 1rem;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+
+  /* no custom color shadows to avoid palette overriding */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+}

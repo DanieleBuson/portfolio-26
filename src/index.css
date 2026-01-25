@@ -1,0 +1,53 @@
+/* =========================
+   THEME PALETTES (DEFAULT: LIGHT)
+   ========================= */
+
+/* Default theme = LIGHT */
+:root {
+  /* surfaces */
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f6f6f7;
+  --border: rgba(0, 0, 0, 0.12);
+
+  /* text */
+  --text: #141414;
+  --text-muted: rgba(20, 20, 20, 0.72);
+
+  /* links */
+  --link: #141414;
+  --link-hover: #8a6a00; /* golden-ish hover */
+
+  /* GOLD buttons (light mode) */
+  --btn-bg: #caa23a;        /* gold */
+  --btn-bg-hover: #b1892f;  /* darker gold */
+  --btn-text: #ffffff;
+
+  /* inputs */
+  --control-bg: rgba(0, 0, 0, 0.04);
+  --control-bg-hover: rgba(0, 0, 0, 0.07);
+  --control-border: rgba(0, 0, 0, 0.12);
+}
+
+/* DARK theme override */
+body.dark {
+  --bg: #0f1115;
+  --surface: #141821;
+  --surface-2: #10131a;
+  --border: rgba(255, 255, 255, 0.14);
+
+  --text: #f2f4f7;
+  --text-muted: rgba(242, 244, 247, 0.72);
+
+  --link: #f2f4f7;
+  --link-hover: #d6dbe3;
+
+  /* SILVER buttons (dark mode) */
+  --btn-bg: #aeb6c2;        /* silver */
+  --btn-bg-hover: #909aaa;  /* darker silver */
+  --btn-text: #0f1115;
+
+  --control-bg: rgba(255, 255, 255, 0.08);
+  --control-bg-hover: rgba(255, 255, 255, 0.12);
+  --control-border: rgba(255, 255, 255, 0.18);
+}

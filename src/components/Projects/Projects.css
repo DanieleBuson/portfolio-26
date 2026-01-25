@@ -1,0 +1,159 @@
+.projects-section {
+  background: var(--bg);
+  color: var(--text);
+  padding: 5rem 0;
+}
+
+.projects-title {
+  margin: 0;
+  color: var(--text);
+}
+
+.projects-subtitle {
+  margin: 0.5rem 0 0;
+  color: var(--text-muted);
+  max-width: 60ch;
+}
+
+/* Filters row */
+.projects-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Same pattern as your skills-filter-btn */
+.projects-filter-btn {
+  background: var(--control-bg) !important;
+  border: 1px solid var(--control-border) !important;
+  color: var(--text) !important;
+}
+
+.projects-filter-btn:hover {
+  background: var(--control-bg-hover) !important;
+  color: var(--text) !important;
+}
+
+.projects-filter-btn.is-active {
+  background: var(--btn-bg) !important;
+  border-color: var(--btn-bg) !important;
+  color: var(--btn-text) !important;
+}
+
+/* Cards container */
+.projects-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem; /* spacing between “rows” */
+}
+
+/* Each row looks like a card (no list borders) */
+.projects-cardRow {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+  color: var(--text);
+  text-decoration: none;
+  transition: background 160ms ease, transform 160ms ease, border-color 160ms ease;
+}
+
+.projects-cardRow:hover {
+  background: var(--surface-2);
+  color: var(--text);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.projects-cardRow:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(202, 162, 58, 0.18);
+}
+
+.projects-cardRowInner {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.projects-icon {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+}
+
+.projects-cardContent {
+  min-width: 0;
+}
+
+.projects-cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.projects-itemTitle {
+  font-weight: 600;
+  color: var(--text);
+  min-width: 0;
+  flex: 1 1 12rem;
+}
+
+.projects-desc {
+  margin-top: 0.4rem;
+  color: var(--text-muted);
+}
+
+.projects-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: flex-end;
+  flex: 0 0 auto;
+}
+
+.projects-tag {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 0.55rem;
+  border-radius: 999px;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  font-size: 0.85rem;
+  border: 1px solid transparent;
+}
+
+.projects-linkHint {
+  margin-top: 0.35rem;
+  line-height: 1.2;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(2px);
+  transition: opacity 160ms ease, transform 160ms ease, visibility 0s linear 160ms;
+}
+
+.projects-cardRow:hover .projects-linkHint,
+.projects-cardRow:focus-visible .projects-linkHint,
+.projects-cardRow:focus-within .projects-linkHint {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+
+@media (max-width: 576px) {
+  .projects-tags {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
