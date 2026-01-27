@@ -68,7 +68,7 @@ export default function Projects() {
           descKey: 'projects-items-osteopata-desc',
           tags: ['Website', 'Design'],
           iconSrc: websiteIcon,
-          href: 'https://www.emanuelefontanaosteopata.it/'
+          href: 'https://www.emanuelefontanaosteopata.it/' 
         }
       ],
       research: [
